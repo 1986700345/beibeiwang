@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body{
+    background: #fff;
+}
+div,img,h1{
+    padding: 0;
+    margin: 0;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+
+.m-15{
+    margin-top:15px;
+}
+.p-color{
+    color: #ff4965;
+}
+.wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    &:after{
+        clear: both;
+        content: " ";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+/*头部*/
+.header{
+    padding-top:45px;
+    .logo{
+        float: left;
+        a{
+            display: block;
+            background: url(../img/logo.png) no-repeat;
+            height: 60px;
+            position: relative;
+            width: 250px;
+        }
+        
+    }
+    .f-right{
+        a{
+            float: right;
+            display: block;
+            background: url(../img/upload_d96e41a66c898b1e6afef9efbfbdc1be_361x54.png) 0 3px no-repeat;
+            height: 50px;
+            position: relative;
+            width: 360px;
+        }
+        
+    }
+}
+

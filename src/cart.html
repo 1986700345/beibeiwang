@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="母婴特卖,母婴商城,童装,童鞋,玩具,贝贝网">
+		<meta name="description" content="1亿妈妈信赖之选，每天1折起限时特卖，童装童鞋、母婴用品、居家百货、女装鞋包等天天上新，正品保证，全场包邮。">
+		<meta name="anthor" content="韩童" />
+		<title>贝贝网</title>
+		<link rel="stylesheet" href="css/cart.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<style type="text/css">
+			@font-face {
+				font-family: iconfont;
+				src: url(fonts/font_tr83tta2jkc8r529.eot);
+				src: url(fonts/font_tr83tta2jkc8r529.eot?#iefix) format('embedded-opentype'), url(fonts/font_tr83tta2jkc8r529.woff) format('woff'), url(fonts/font_tr83tta2jkc8r529.ttf) format('truetype'), url(fonts/font_tr83tta2jkc8r529.svg#iconfont) format('svg')
+			}
+			
+			@font-face {
+				font-family: iconfont2;
+				src: url(fonts/font_214968_mjn6zt3zh7e.eot);
+				src: url(fonts/font_214968_mjn6zt3zh7e.eot?#iefix) format('embedded-opentype'), url(fonts/font_214968_mjn6zt3zh7e.woff) format('woff'), url(fonts/font_214968_mjn6zt3zh7e.ttf) format('truetype'), url(fonts/font_214968_mjn6zt3zh7e.svg#iconfont) format('svg')
+			}
+			
+			.iconfont {
+				font-family: iconfont;
+				font-size: 12px;
+				font-style: normal;
+			}
+			
+			.icons.taobao-icon {
+				background-position: 0 0
+			}
+		</style>
+	</head>
+<body>
+	<div class="top">
+			<div class="wrapper">
+				<div class="top_main">
+					<ul>
+						<li><span>你好,</span>&nbsp;
+							<a href="login.html">请登录</a>&nbsp;
+							<a href="registor.html" class="pink">免费注册</a>
+						</li>
+						<li class="border"></li>
+						<li>
+							<a href="#">商家入驻</a>
+						</li>
+						<li class="border"></li>
+						<li class="bgchange">
+							<span class="default">
+								<a href="#">贝贝商家中心</a>
+								<i class="iconfont">&#xe601;</i>
+							</span>
+							<ul class="dropdown-list">
+								<li>
+									<a href="#">贝店商家中心</a>
+								</li>
+								<li>
+									<a href="#">有团商家中心</a>
+								</li>
+								<li style="border-top: 1px solid #ddd;">
+									<a href="#">供应商家中心</a>
+								</li>
+							</ul>
+						</li>
+						<li class="border"></li>
+						<li class="bgchange">
+							<span class="default">
+								<i class="iconfont pink">&#xf0143;</i>
+								<a href="#">帮助中心</a>
+								<i class="iconfont">&#xe601;</i>
+							</span>
+							<ul class="dropdown-list">
+								<li>
+									<i class="iconfont pink">&#xe621;</i>
+									<a href="#">联系客服</a>
+								</li>
+							</ul>
+						</li>
+						<li class="border"></li>
+						<li class="guanzhu">
+							<div class="bgchange">
+								<span>
+									<span>关注</span>
+								<i class="iconfont">&#xe601;</i>
+								</span>
+								<div class="dropdown-list change">
+									<ul class="ul_left">
+										<li>
+											<div>微信号：beibeiclub</div>
+											<div style="height: 90px;"><img src="img/beibeiclub_90.png" width="90" height="90"></div>
+											<div>订阅贝贝官方微信</div>
+										</li>
+									</ul>
+									<ul class="ul_right">
+										<li>
+											<a href="#">
+												<img src="img/weibo_45x45.png" width="45" height="45" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/qzone_45x45.png" width="45" height="45" />
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+		<!--页面头部-->
+		<div class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<img src="img/logo.png" alt="贝贝" />
+					<a href="#" class="logo-link">&nbsp;</a>
+				</div>
+				<div class="logo-slogan">
+					<a href="#">&nbsp;</a>
+				</div>
+				<div class="nav-cart">
+					<a href="#" class="top-cart">
+						<div class="border-iconfont">
+							<i class="iconfont">&#xf0148;</i>
+						</div>
+						<span>我的购物车<i class="iconfont">&#xf0170;</i></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+				<div class="cart-title">
+					<h1>我的购物车</h1>
+					<i></i>
+				</div>
+				<div class="cart-empty" style="display: none;">
+					<div class="title">
+						<i class="iconfont">&#xf0179;</i>
+						<span>你的购物车还是空的，赶快去挑选商品吧</span>
+					</div>
+					<div class="goshopping">
+						<a href="index.html">去看看正在特卖中的品牌商品 ></a>
+					</div>
+					<div class="goshopping" style="margin-top: 30px;">
+						<a href="cart.html" class="c-9"><i class="iconfont">&#xf015c;</i> 刷新我的购物车</a>
+					</div>
+				</div>
+				<div class="cart-list">
+					<form>
+						<div class="box">
+							<ul>
+								<li><input type="checkbox" checked="checked">全选</li>
+								<li>商品</li>
+								<li>商品信息</li>
+								<li>单价(元)</li>
+								<li>数量</li>
+								<li>小计(元)</li>
+								<li>操作</li>
+							</ul>
+						</div>
+						
+						<div class="view-cartlist">
+							<ul>
+								<li></li>
+								<li>
+									<input type="checkbox" checked="checked" />
+									<span class="event-title">
+										<a href="#">玛呖德品牌特惠</a>
+									</span>
+								</li>
+								<li class="shop-list">
+									<ul>
+										<li>
+											<input type="checkbox" checked="checked" />
+										</li>
+										<li>
+											<a href="#" class="image">
+												<img src="img/92768647747097_800x800.jpg!60x60.jpg" />
+											</a>
+											<a href="#" class="title">玛呖德紫米面包1100g三明治蛋糕营养早餐食品零食整箱</a>
+										</li>
+										<li>
+											<p>口味1</p>
+										</li>
+										<li>
+											<p>19.80</p>
+											<del>35.90</del>
+										</li>
+										<li>
+											<div>
+												<a href="#" class="del-num"></a>
+												<input type="text" value="1" />
+												<a href="#" class="add-num"></a>
+											</div>
+										</li>
+										<li>
+											<span>19.80</span>
+										</li>
+										<li>
+											<a href="#" class="del">删除</a>
+										</li>
+									</ul>
+								</li>
+								<li class="count">
+									<p>小计：<span>19.80</span></p>
+								</li>
+							</ul>
+						</div>
+						<div class="pay">
+							<div class="del-shop">
+								<input type="checkbox" checked="checked"  id="quanxuan"/>
+								<label for="quanxuan">全选</label>
+								<a href="#" style="margin-left:15px;">删除</a>
+							</div>
+							<div class="count-num">
+								共有<span>1</span>件,
+							</div>
+							<div class="discount">已优惠<span>0.00</span>元，总计(不含运费):</div>
+							<span class="count-pay">￥19.80</span>
+							<a href="#" class="pay-btn">确认订单</a>
+						</div>
+					</form>
+					
+				</div>
+		</div>
+		<div id="footer"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+		<script>
+			$(function() {                     
+				$('#footer').load('footer.html');         
+			})
+		</script>
+</body>
+</html>

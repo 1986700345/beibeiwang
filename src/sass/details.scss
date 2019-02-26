@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/*顶部*/
+
+@import "top";
+
+/*内容区*/
+
+.common {
+    margin: 15px 0 15px 35px;
+    font-size: 13px;
+    position: relative;
+    color: #777;
+}
+
+.common label {
+    line-height: 20px;
+    width: 65px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: right;
+    color: #888;
+    float: left;
+}
+
+#content {
+    margin-top: 20px;
+    .detail-title {
+        margin: 0 5px 10px;
+        color: #999999;
+        a {
+            color: #999999;
+        }
+    }
+    .detail-content {
+        height: 610px;
+        background: #FFFFFF;
+        margin-bottom: 20px;
+        /*放大镜区域*/
+        .slide-wrap {
+            width: 500px;
+            height: 610px;
+            padding: 0 20px;
+            float: left;
+            #spic {
+                padding: 20px 0;
+                img {
+                    width: 458px;
+                    border: 1px solid #dfdfdf;
+                }
+            }
+            #ulist {
+                width: 460px;
+                height: 85px;
+                #list {
+                    width: 340px;
+                    height: 85px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+                li {
+                    padding: 6px;
+                    float: left;
+                    margin: 0 4px;
+                    border: 2px solid #dfdfdf;
+                }
+                .b-color {
+                    border: 2px solid #ff5482;
+                }
+            }
+            #bf {
+                top: 227px;
+                left: 623.5px;
+                width: 400px;
+                height: 400px;
+                display: block;
+            }
+        }
+        /*商品详情介绍*/
+        .main-wrapper {
+            width: 548px;
+            margin-left: 480px;
+            padding: 25px;
+            .detail {
+                font-weight: 400;
+                color: #333;
+                .font-style {
+                    font-size: 20px;
+                }
+            }
+            .price-show {
+                width: 575px;
+                height: 80px;
+                color: #FFFFFF;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background: #fe4a7a;
+                position: relative;
+                div {
+                    font-size: 13px;
+                    position: relative;
+                    top: 20px;
+                    display: inline;
+                    float: left;
+                    height: 36px;
+                    padding: 0 18px;
+                    text-align: center;
+                }
+                .now-price {
+                    font-size: 55px;
+                    line-height: 80px;
+                    top: 0;
+                    width: 210px;
+                    height: 80px;
+                    em {
+                        font-size: 24px;
+                    }
+                }
+                .discount-price {
+                    border-right: 1px dashed #f989a7;
+                    border-left: 1px dashed #f989a7;
+                }
+                .line {
+                    position: absolute;
+                    top: 0;
+                    right: -5px;
+                    width: 5px;
+                    height: 88px;
+                    padding: 0;
+                    background: url(../img/price-info-line.png) no-repeat;
+                }
+            }
+            .sale-attr {
+                padding: 15px 0 0;
+                border: 3px solid #eee;
+                border-top: none;
+                ul {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                    position: absolute;
+                    top: -7px;
+                    li {
+                        line-height: 20px;
+                        position: relative;
+                        float: left;
+                        margin: 0 4px 4px 0;
+                        padding: 1px;
+                        vertical-align: middle;
+                        background: #fff;
+                        a {
+                            float: left;
+                            padding: 2px 11px;
+                            text-align: center;
+                            white-space: nowrap;
+                            text-decoration: none;
+                            color: #000;
+                            border: 1px solid #b8b7bd;
+                            background-color: #fff;
+                            span {
+                                position: relative;
+                                z-index: 2;
+                                padding-left: 1px;
+                                line-height: 25px;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+                .info {
+                    display: block;
+                    cursor: pointer;
+                    position: relative;
+                    em {
+                        background: #ff8135;
+                        padding: 0 5px;
+                        color: #fff;
+                        border: 1px solid #66a600;
+                        margin: 0 5px 0 10px;
+                    }
+                    div {
+                        position: absolute;
+                        z-index: 9;
+                        right: 5px;
+                        top: 25px;
+                        padding: 10px 20px;
+                        border-radius: 3px;
+                        background: #fff;
+                        outline: 1px solid #e1e1e1;
+                        outline: 1px solid rgba(0, 0, 0, 0);
+                        box-shadow: 0 0 3px #aaa;
+                    }
+                }
+                .quantity-form {
+                    position: relative;
+                    overflow: hidden;
+                    height: 20px;
+                    border: 1px solid #cacbcb;
+                    margin-left: 10px;
+                    a {
+                        display: inline-block;
+                        height: 18px;
+                        line-height: 18px;
+                        padding: 1px 0;
+                        width: 16px;
+                        text-align: center;
+                        color: #666;
+                        margin: 0;
+                        background: #fff;
+                        float: left;
+                    }
+                    input {
+                        width: 44px;
+                        height: 22px;
+                        float: left;
+                        text-align: center;
+                        background: white;
+                        outline: none;
+                        border: none;
+                    }
+                    .quantity-down {
+                        border-right: 1px solid #cacbcb;
+                    }
+                    .quantity-add {
+                        border-left: 1px solid #cacbcb
+                    }
+                }
+                .view-buy {
+                    width: 542px;
+                    height: 48px;
+                    padding-bottom: 30px;
+                    border-bottom: 1px dashed #333333;
+                    .view-left{
+                        width: 271px;
+                        position: relative;
+                        .btn{
+                            display: block;
+                            width: 148px;
+                            height: 48px;
+                            border: 1px solid #ff4965;
+                            border-radius: 4px;
+                            background: #ff4965;
+                            position: absolute;
+                            right: 10px;
+                            color: #FFFFFF;
+                           
+                        }
+                        .price-wrap{
+                            display: block;
+                            font-size: 24px;
+                            width: 148px;
+                            height: 24px;
+                            line-height: 24px;
+                            text-align: center;
+                            i,em{
+                                font-size: 14px;
+                            }
+                        }
+                        .ddgm{
+                            display: block;
+                            width: 148px;
+                            height: 24px;
+                            line-height: 24px;
+                            text-align: center;
+                            
+                        }
+                        
+                    }
+                    .view-right{
+                       float: right;
+                        width: 271px;
+                        height: 48px;
+                        a:hover{
+                            .xz-area{
+                                display: block;
+                            }
+                        }
+                        .xz-area{
+                            display: none;
+                            width: 140px;
+                            height: 140px;
+                            padding: 5px;
+                            border: 1px solid #ff4965;
+                        }
+                        span{
+                            display: block;
+                            width: 148px;
+                            height: 48px;
+                            font-size: 18px;
+                            color: #ff4965;
+                            line-height: 48px;
+                            border: 1px solid #ff4965;
+                            border-radius: 4px;
+                            text-align: center;
+                        }
+                        i{
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            background: red;
+                            background: url(../img/c2461d9939eeb23c_24x20.png) no-repeat;
+                            vertical-align: middle;
+                        }
+                        
+                    }
+                }
+                .count-down{
+                    margin-left: 105px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 16px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
+
+
+/*底部*/
+
+@import "footer";

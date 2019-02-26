@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.footer-nav {
+    text-align: center;
+    border-top: 3px solid #ff5482;
+    background: #555;
+    padding: 10px 0;
+    color: #ddd;
+    a {
+        color: #ddd;
+        margin: 0 10px;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.footer-content {
+    background: #fff;
+    padding: 20px 0 40px;
+    color: #999;
+    p {
+        text-align: center;
+    }
+    .mt-20 {
+        margin-top: 20px;
+        text-align: center;
+        a {
+            padding-right: 10px;
+        }
+    }
+}
