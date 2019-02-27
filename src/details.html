@@ -7,6 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
 		<link rel="stylesheet" href="css/details.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<style type="text/css">
 			@font-face {
 				font-family: iconfont;
@@ -49,17 +50,18 @@
 			<div class="detail-content">
 				<div class="slide-wrap">
 					<div id="spic">
-						<img src="img/tm1.jpg" alt="">
-						<div id="sf"></div>
+						<img src="http://b1.hucdn.com/upload/item/1902/13/39134407065282_500x500.jpg!tdmain.jpg" alt="" id="smallpic">
+						<div id="sf">&nbsp;</div>
 					</div>
-					<div id="bf" style="display: none;">
-						<img src="img/tm1.jpg" alt="" id="bpic">
+					<div id="bf" style="display: ;">
+						<img src="http://b1.hucdn.com/upload/item/1902/13/39134407065282_500x500.jpg!tdmain.jpg" alt="" id="bpic">
 					</div>
 					<div id="ulist">
 						<div id="list">
 							<ul>
-								<li class="b-color"><img src="img/tm1.jpg" width="60" height="60"></li>
-								<li><img src="img/tm1.jpg" width="60" height="60" alt=""></li>
+								<!--<li class="b-color"><img src="http://b1.hucdn.com/upload/item/1902/13/39134407065282_500x500.jpg!60x60.jpg"></li>
+								<li><img src="http://b1.hucdn.com/upload/item/1902/13/39134407065282_500x500.jpg!60x60.jpg" width="60" height="60" alt=""></li>
+								<li></li>-->
 							</ul>
 						</div>
 					</div>
@@ -74,7 +76,7 @@
 					</div>
 					<div class="price-show">
 						<div class="now-price">
-							<span class="n-price"><em>￥</em>13.90</span>
+							<span class="n-price"><em>￥</em><span>13.90</span></span>
 						</div>
 						<div class="past-price">
 							<del>60.00</del>
@@ -124,15 +126,15 @@
 							<label>购买数量</label>
 							<div class="quantity-form" style="float: left;">
 								<a class="quantity-down" href="javascript:void(0)">-</a>
-								<input type="text" value="1" />
+								<input type="text" value="1" id="count"/>
 								<a class="quantity-add" href="javascript:void(0)">+</a>
 							</div>
 							件
 						</div>
 						<div class="view-buy">
 							<div class="view-left">
-								<a href="#" class="btn">
-									<span class="price-wrap"><i>￥</i>29<em>.90</em></span>
+								<a href="cart.html" class="btn">
+									<span class="price-wrap"><i>￥</i><span>29.90</span></span>
 									<span class="ddgm">单独购买</span>
 								</a>
 
@@ -163,6 +165,8 @@
 		</div>
 		<div id="footer"></div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+		<script type="text/javascript" src="script/thirdplugins/cookie.js" ></script>
+		<script type="text/javascript" src="script/js/detail.js" ></script>
 		<script>
 			$(function() {            
 				$('#header').load('header.html');            

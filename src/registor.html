@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Document</title>
 		<link rel="stylesheet" href="css/register.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<style type="text/css">
 			@font-face {
 				font-family: iconfont;
@@ -48,7 +49,7 @@
 		</div>
 		<!--右侧输入区域-->
 		<div class="content-right float-r">
-			<form action="" class="form-style">
+			<form action="login.html" class="form-style">
 				<div class="login-title">
 					<span class="login float-l">新用户注册</span>
 					<span class="register float-r">已有账号&nbsp;?&nbsp;<a href="#" class="p-color">直接登录</a></span>
@@ -58,15 +59,17 @@
 						<span class="touxiang"><i class="iconfont">&#xf012d;</i></span>
 						<input type="text" placeholder="您的手机号" name="username"  class="telphone"/>
 					</div>
+					<div class="notice"></div>
 					<div class="slide m-15"></div>
 					<div class="passw m-15">
 						<span class="mima"><i class="iconfont">&#xf00c9;</i></span>
 						<input type="password" placeholder="密码，6-16位字母、数字或符号" name="password" class="password"/>
 						<span class="passlock"></span>
 					</div>
+					<div class="notice"></div>
 				</div>
 				<div class="login-btn m-15">
-					<a href="#">注册</a>
+					<a href="login.html" class="submit">注册</a>
 				</div>
 				<div class="m-15">
 					<span>为保障账户安全，建议密码为6-16位字符，可包含数字、字母和特殊字符。</span>
@@ -85,6 +88,7 @@
 	<!--页面底部-->
 	<div id="footer"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+	<script src="script/js/registor.js"></script>
 		<script>
 			 $(function() {
                 $('#header').load('header.html');

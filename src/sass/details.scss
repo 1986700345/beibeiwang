@@ -43,10 +43,23 @@
             padding: 0 20px;
             float: left;
             #spic {
+                width: 479px;
+                height: 479px;
                 padding: 20px 0;
+                position: relative;
                 img {
                     width: 458px;
                     border: 1px solid #dfdfdf;
+                }
+                #sf{
+                    position: absolute;
+                    width: 229px;
+                    height: 229px;
+                    top:0px;
+                    left:0px;
+                    background: url(../img/mask.png) repeat scroll 0 0;
+                    z-index: 1;
+                    cursor: move;
                 }
             }
             #ulist {
@@ -59,21 +72,36 @@
                     overflow: hidden;
                 }
                 li {
+                    width: 60px;
+                    height: 60px;
                     padding: 6px;
                     float: left;
                     margin: 0 4px;
                     border: 2px solid #dfdfdf;
+                    img{
+                        width: 60px;
+                    }
                 }
                 .b-color {
                     border: 2px solid #ff5482;
                 }
             }
             #bf {
-                top: 227px;
-                left: 623.5px;
+                position: absolute;
+                top: 50px;
+                left: 490px;
                 width: 400px;
                 height: 400px;
                 display: block;
+                overflow: hidden;
+                z-index: 1000;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 800px;
+                    height: 800px;
+                }
             }
         }
         /*商品详情介绍*/

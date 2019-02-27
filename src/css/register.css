@@ -114,6 +114,14 @@ div, img, h1 {
   border-right: 1px solid #e6e6e6;
   padding-right: 7px;
 }
+.content .content-right .login-content .notice {
+  display: none;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 8px;
+  color: #fe4b49;
+  font-size: 12px;
+}
 .content .content-right .login-content .passw {
   display: block;
   border: 1px solid #e6e6e6;
@@ -158,6 +166,7 @@ div, img, h1 {
   height: 30px;
 }
 .content .content-right .login-btn a {
+  text-decoration: none;
   color: #fff;
   background: #ff4965;
   display: block;

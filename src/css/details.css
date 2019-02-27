@@ -502,11 +502,24 @@ li {
   float: left;
 }
 #content .detail-content .slide-wrap #spic {
+  width: 479px;
+  height: 479px;
   padding: 20px 0;
+  position: relative;
 }
 #content .detail-content .slide-wrap #spic img {
   width: 458px;
   border: 1px solid #dfdfdf;
+}
+#content .detail-content .slide-wrap #spic #sf {
+  position: absolute;
+  width: 229px;
+  height: 229px;
+  top: 0px;
+  left: 0px;
+  background: url(../img/mask.png) repeat scroll 0 0;
+  z-index: 1;
+  cursor: move;
 }
 #content .detail-content .slide-wrap #ulist {
   width: 460px;
@@ -519,20 +532,35 @@ li {
   overflow: hidden;
 }
 #content .detail-content .slide-wrap #ulist li {
+  width: 60px;
+  height: 60px;
   padding: 6px;
   float: left;
   margin: 0 4px;
   border: 2px solid #dfdfdf;
 }
+#content .detail-content .slide-wrap #ulist li img {
+  width: 60px;
+}
 #content .detail-content .slide-wrap #ulist .b-color {
   border: 2px solid #ff5482;
 }
 #content .detail-content .slide-wrap #bf {
-  top: 227px;
-  left: 623.5px;
+  position: absolute;
+  top: 50px;
+  left: 490px;
   width: 400px;
   height: 400px;
   display: block;
+  overflow: hidden;
+  z-index: 1000;
+}
+#content .detail-content .slide-wrap #bf img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  height: 800px;
 }
 #content .detail-content .main-wrapper {
   width: 548px;

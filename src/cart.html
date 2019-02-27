@@ -9,6 +9,7 @@
 		<title>贝贝网</title>
 		<link rel="stylesheet" href="css/cart.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<style type="text/css">
 			@font-face {
 				font-family: iconfont;
@@ -137,7 +138,7 @@
 					<h1>我的购物车</h1>
 					<i></i>
 				</div>
-				<div class="cart-empty" style="display: none;">
+				<div class="cart-empty" style="display:none;">
 					<div class="title">
 						<i class="iconfont">&#xf0179;</i>
 						<span>你的购物车还是空的，赶快去挑选商品吧</span>
@@ -163,10 +164,10 @@
 							</ul>
 						</div>
 						
-						<div class="view-cartlist">
+						<div class="view-cartlist" style="display: none;">
 							<ul>
 								<li></li>
-								<li>
+								<li class="cart-checkbox">
 									<input type="checkbox" checked="checked" />
 									<span class="event-title">
 										<a href="#">玛呖德品牌特惠</a>
@@ -187,18 +188,18 @@
 											<p>口味1</p>
 										</li>
 										<li>
-											<p>19.80</p>
-											<del>35.90</del>
+											<p class="b-price">19.80</p>
+											<del class="oldprice">35.90</del>
 										</li>
 										<li>
-											<div>
+											<div class="quantity-form2">
 												<a href="#" class="del-num"></a>
 												<input type="text" value="1" />
 												<a href="#" class="add-num"></a>
 											</div>
 										</li>
 										<li>
-											<span>19.80</span>
+											<span class="b-sum">19.80</span>
 										</li>
 										<li>
 											<a href="#" class="del">删除</a>
@@ -220,7 +221,7 @@
 								共有<span>1</span>件,
 							</div>
 							<div class="discount">已优惠<span>0.00</span>元，总计(不含运费):</div>
-							<span class="count-pay">￥19.80</span>
+							<span class="count-pay">0.00</span>
 							<a href="#" class="pay-btn">确认订单</a>
 						</div>
 					</form>
@@ -229,6 +230,8 @@
 		</div>
 		<div id="footer"></div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+		<script type="text/javascript" src="script/thirdplugins/cookie.js" ></script>
+		<script type="text/javascript" src="script/js/cart.js" ></script>
 		<script>
 			$(function() {                     
 				$('#footer').load('footer.html');         
