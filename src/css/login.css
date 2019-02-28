@@ -61,6 +61,10 @@ div, img, h1 {
 }
 
 /*内容区*/
+a {
+  text-decoration: none;
+}
+
 .content {
   padding: 110px 0;
   /*左侧内容区*/
@@ -193,6 +197,10 @@ div, img, h1 {
 }
 
 /*页面底部*/
+body {
+  font-size: 12px;
+}
+
 .footer-nav {
   text-align: center;
   border-top: 3px solid #ff5482;

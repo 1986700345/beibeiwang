@@ -35,7 +35,7 @@
 	<!--头部-->
 	<div class="header wrapper">
 		<div class="logo">
-			<a href="#"></a>
+			<a href="index.html"></a>
 		</div>
 		<div class="f-right">
 			<a href="#"></a>
@@ -49,27 +49,27 @@
 		</div>
 		<!--右侧输入区域-->
 		<div class="content-right float-r">
-			<form action="login.html" class="form-style">
+			<form action="../php/register.php" method="post" class="form-style">
 				<div class="login-title">
 					<span class="login float-l">新用户注册</span>
-					<span class="register float-r">已有账号&nbsp;?&nbsp;<a href="#" class="p-color">直接登录</a></span>
+					<span class="register float-r">已有账号&nbsp;?&nbsp;<a href="login.html" class="p-color">直接登录</a></span>
 				</div>
 				<div class="login-content m-15">
 					<div class="tel">
-						<span class="touxiang"><i class="iconfont">&#xf012d;</i></span>
-						<input type="text" placeholder="您的手机号" name="username"  class="telphone"/>
+						<span class="touxiang"></span>
+						<input type="text" placeholder="您的手机号" name="telephone"  class="telphone"/>
 					</div>
 					<div class="notice"></div>
-					<div class="slide m-15"></div>
+					<!--<div class="slide m-15"></div>-->
 					<div class="passw m-15">
-						<span class="mima"><i class="iconfont">&#xf00c9;</i></span>
+						<span class="mima"></span>
 						<input type="password" placeholder="密码，6-16位字母、数字或符号" name="password" class="password"/>
 						<span class="passlock"></span>
 					</div>
-					<div class="notice"></div>
+					<div class="notice" id="notice"></div>
 				</div>
 				<div class="login-btn m-15">
-					<a href="login.html" class="submit">注册</a>
+					<input type="submit" value="注册" name="submit"/>
 				</div>
 				<div class="m-15">
 					<span>为保障账户安全，建议密码为6-16位字符，可包含数字、字母和特殊字符。</span>
@@ -88,7 +88,9 @@
 	<!--页面底部-->
 	<div id="footer"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+	<script type="text/javascript" src="script/thirdplugins/ajaxfn.js" ></script>
 	<script src="script/js/registor.js"></script>
+	<script type="text/javascript" src="script/thirdplugins/sha1.js" ></script>
 		<script>
 			 $(function() {
                 $('#header').load('header.html');

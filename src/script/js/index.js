@@ -1,4 +1,7 @@
 !function(){
+	if(getcookie('telephone',)){
+		
+	}
 	var $oUl=$('.content_main ul');
 	$.ajax({
 		url:"../php/data.php",
@@ -8,7 +11,7 @@
 		$.each(data,function(index,value){
 			$htmlstr+=`
 			<li>
-							<a href="http://10.31.162.36/beibeiwang/src/details.html?sid=${value.sid}" class="shopsale">
+							<a href="http://10.31.162.36/beibeiwang/src/details.html?sid=${value.sid}" target="_blank" class="shopsale">
 								<div class="items-detail">
 									<img class="mark" src="img/6766c06058f86ced_174x174.png" />
 									<div class="hot-product">

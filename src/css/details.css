@@ -794,6 +794,10 @@ li {
 }
 
 /*底部*/
+body {
+  font-size: 12px;
+}
+
 .footer-nav {
   text-align: center;
   border-top: 3px solid #ff5482;

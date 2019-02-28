@@ -18,7 +18,7 @@
 					//计算每个商品的价格
 					$clonebox.find('.b-sum').html((value.price*count).toFixed(2));
 					$clonebox.css('display','block');
-					$('.cart-list').append($clonebox);
+					$('.cartbox').append($clonebox);
 					priceall();//计算总价
 				}
 			});
@@ -135,6 +135,7 @@
 		}
 	}
     function setcookie(obj){
+    	cookietoarray();//得到数组
     	var $index=obj.parents('.view-cartlist').find('img').attr('sid');
     	arrnum[$.inArray($index,arrsid)]=obj.parents('.view-cartlist').find('.quantity-form2 input').val();
     	addcookie('cookienum',arrnum.toString(),7);

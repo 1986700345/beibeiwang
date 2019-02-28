@@ -86,4 +86,23 @@
    			addcookie('cookienum',arrnum.toString(),10);//数组存入cookie
    		}
    });
+   //数量的改变
+    //改变商品数量++
+    $('.quantity-add').on('click',function(){
+    	var $count=$('#count').val();
+    	$count++;
+    	if($count>=10){
+    		$count=10;
+    	}
+    	$('#count').val($count);
+    });
+    //改变数量--
+    $('.quantity-down').on('click',function(){
+    	var $count=$('#count').val();
+    	$count--;
+    	if($count<=1){
+    		$count=1;
+    	}
+    	$('#count').val($count);
+    });
 }();

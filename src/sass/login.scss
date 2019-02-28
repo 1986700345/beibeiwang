@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import "common";
 /*内容区*/
+a{
+    text-decoration: none;
+}
 .content{
     padding: 110px 0;
     /*左侧内容区*/

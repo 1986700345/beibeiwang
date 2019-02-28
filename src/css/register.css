@@ -60,6 +60,10 @@ div, img, h1 {
   width: 360px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   padding: 110px 0;
   /*左侧内容区*/
@@ -70,6 +74,7 @@ div, img, h1 {
   padding-left: 50px;
 }
 .content .content-right {
+  font-size: 12px;
   color: #666;
   width: 400px;
   border: 1px solid #ececec;
@@ -90,12 +95,28 @@ div, img, h1 {
 .content .content-right .login-title .register {
   font-weight: 400;
 }
+.content .content-right .login-content {
+  font-size: 12px;
+}
 .content .content-right .login-content .tel {
   display: block;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
   padding-left: 30px;
   position: relative;
+}
+.content .content-right .login-content .tel .touxiang {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  border-right: 1px solid #e6e6e6;
+  padding-right: 7px;
+  background: url(../img/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg) no-repeat 0 0;
+  width: 14px;
+  height: 14px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
 }
 .content .content-right .login-content .tel .telphone {
   height: 30px;
@@ -115,7 +136,6 @@ div, img, h1 {
   padding-right: 7px;
 }
 .content .content-right .login-content .notice {
-  display: none;
   height: 18px;
   line-height: 18px;
   margin-top: 8px;
@@ -128,6 +148,18 @@ div, img, h1 {
   border-radius: 2px;
   padding-left: 30px;
   position: relative;
+}
+.content .content-right .login-content .passw .mima {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  border-right: 1px solid #e6e6e6;
+  padding-right: 7px;
+  background: url(../img/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg) no-repeat 0 -47px;
+  width: 14px;
+  height: 14px;
+  line-height: 30px;
+  text-align: center;
 }
 .content .content-right .login-content .passw .passlock {
   cursor: pointer;
@@ -165,17 +197,20 @@ div, img, h1 {
   width: 278px;
   height: 30px;
 }
-.content .content-right .login-btn a {
+.content .content-right .login-btn input {
   text-decoration: none;
   color: #fff;
   background: #ff4965;
   display: block;
+  width: 330px;
   height: 32px;
   line-height: 32px;
   border-radius: 3px;
   text-align: center;
   font-size: 14px;
   letter-spacing: 6px;
+  outline: none;
+  border: none;
 }
 .content .content-right .quicklogin {
   height: 24px;
@@ -192,6 +227,10 @@ div, img, h1 {
 }
 .content .content-right .quicklogin .bgweixing {
   background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) no-repeat -119px 0;
+}
+
+body {
+  font-size: 12px;
 }
 
 .footer-nav {

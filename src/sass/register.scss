@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import "common";
+a{
+    text-decoration: none;
+}
 .content {
     padding: 110px 0;
     /*左侧内容区*/
@@ -9,6 +12,7 @@
     }
     /*右侧输入区域*/
     .content-right {
+        font-size: 12px;
         color: #666;
         width: 400px;
         border: 1px solid #ececec;
@@ -29,12 +33,26 @@
             }
         }
         .login-content {
+            font-size: 12px;
             .tel {
                 display: block;
                 border: 1px solid #e6e6e6;
                 border-radius: 2px;
                 padding-left: 30px;
                 position: relative;
+                .touxiang {
+                    position: absolute;
+                    left: 8px;
+                    top: 8px;
+                    border-right: 1px solid #e6e6e6;
+                    padding-right: 7px;
+                    background: url(../img/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg) no-repeat 0 0;
+                    width: 14px;
+                    height: 14px;
+                    line-height: 30px;
+                    color: #fff;
+                    text-align: center;
+                }
                 .telphone {
                     height: 30px;
                     font-size: 12px;
@@ -53,8 +71,7 @@
                     padding-right: 7px;
                 }
             }
-            .notice{
-                display: none;
+            .notice {
                 height: 18px;
                 line-height: 18px;
                 margin-top: 8px;
@@ -67,6 +84,18 @@
                 border-radius: 2px;
                 padding-left: 30px;
                 position: relative;
+                .mima {
+                    position: absolute;
+                    left: 8px;
+                    top: 8px;
+                    border-right: 1px solid #e6e6e6;
+                    padding-right: 7px;
+                    background: url(../img/upload_c8f6a2dfe4ca17b3941740e88373a88e_14x93.jpg) no-repeat 0 -47px;
+                    width: 14px;
+                    height: 14px;
+                    line-height: 30px;
+                    text-align: center;
+                }
                 .passlock {
                     cursor: pointer;
                     position: absolute;
@@ -106,17 +135,20 @@
             height: 30px;
         }
         .login-btn {
-            a {
+            input{
                 text-decoration: none;
                 color: #fff;
                 background: #ff4965;
                 display: block;
+                width: 330px;
                 height: 32px;
                 line-height: 32px;
                 border-radius: 3px;
                 text-align: center;
                 font-size: 14px;
                 letter-spacing: 6px;
+                outline: none;
+                border: none;
             }
         }
         .quicklogin {
